@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Angel Ukpong" />
+    <meta
+      name="description"
+      content="Countdown timer by Angel Ukpong. Assignment for the blockchain development class, chain-8 Chaindustry"
+    />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 id="greeting">
+          Good day, Web & Blockchain developer -- Angel Ukpong
+        </h1>
+        <div class="countdown">
+          <div class="time-box" id="hours">00</div>
+          <div class="separator"></div>
+          <div class="time-box" id="minutes">00</div>
+          <div class="separator"></div>
+          <div class="time-box" id="seconds">00</div>
+          <div class="separator"></div>
+          <div class="time-box" id="ampm">AM</div>
+        </div>
+      </div>
+      <div>
+        <h3 id="greeting2">Set your Countdown</h3>
+        <button id="setTimerBtn">Set Countdown</button>
+        <div id="countdown2" class="countdown2">
+          <div class="time-box2" id="days2">00</div>
+          <div class="separator"></div>
+          <div class="time-box2" id="hours2">00</div>
+          <div class="separator"></div>
+          <div class="time-box2" id="minutes2">00</div>
+          <div class="separator"></div>
+          <div class="time-box2" id="seconds2">00</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="dateModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Select Date and Time</h2>
+        <label for="dateInput">Date:</label>
+        <input type="date" id="dateInput" required />
+        <label for="timeInput">Time:</label>
+        <input type="time" id="timeInput" required />
+        <button id="startCountdownBtn">Start Countdown</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
